@@ -1,9 +1,65 @@
 import { useState } from 'react'
 import FormVagas from '../../components/FormVagas'
+import styled from 'styled-components'
 
 import Vaga from '../../components/Vaga'
 
 import styles from './ListaVagas.module.css'
+
+// type Vaga = {
+//   id: string
+//   titulo: string
+//   localizacao: string
+//   nivel: string
+//   modalidade: string
+//   salarioMin: number
+//   salarioMax: number
+//   requisitos: string[]
+// }
+
+// const ListaVagasContainer = styled.div`
+//   .vagas {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     column-gap: 16px;
+//     row-gap: 16px;
+//     margin-top: 32px;
+
+//     @media (max-width: 768px) {
+//       grid-template-columns: 1fr;
+//     }
+//   }
+// `
+
+// const ListaVagas = () => {
+//   const [filtro, setFiltro] = useState<string>('')
+
+//   const vagasFiltradas = vagas.filter(
+//     (x) => x.titulo.toLocaleLowerCase().search(filtro) >= 0
+//   )
+
+//   return (
+//     <ListaVagasContainer>
+//       <FormVagas aoPesquisar={(termo: string) => setFiltro(termo)} />
+//       <ul className="vagas">
+//         {vagasFiltradas.map((vag) => (
+//           <Vaga
+//           key={vag.id}
+//           titulo={vag.titulo}
+//           localizacao={vag.localizacao}
+//           nivel={vag.nivel}
+//           modalidade={vag.modalidade}
+//           salarioMin={vag.salarioMin}
+//           salarioMax={vag.salarioMax}
+//           requisitos={vag.requisitos}
+//           />
+//         ))}
+//       </ul>
+//     </ListaVagasContainer>
+//   )
+// }
+
+// export default ListaVagas
 
 type Vaga = {
   id: string
